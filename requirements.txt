@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+alembic
+beanie
+pymysql
+dotenv
+pymongo 
+pwdlib[argon2]
+pydantic[email]
+PyJWT
+
