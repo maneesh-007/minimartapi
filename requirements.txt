@@ -10,4 +10,5 @@ pymongo
 pwdlib[argon2]
 pydantic[email]
 PyJWT
-
+boto3
+python-multipart

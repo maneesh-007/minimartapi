@@ -3,6 +3,8 @@ import dotenv
 from beanie import init_beanie
 from pymongo import AsyncMongoClient
 from models.nosql.activitylog import ActivityLog
+from models.nosql.product import Product
+from models.nosql.category import Category
 
 
 dotenv.load_dotenv()
@@ -21,7 +23,7 @@ async def init_mongo():
 
     await init_beanie(
         client[MONGO_DB_NAME],
-        document_models=[ActivityLog]
+        document_models=[ActivityLog,Product,Category]
     )
 
 async def close_mongo():
